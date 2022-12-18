@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: second-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: second-app
+  template:
+    metadata:
+      labels:
+        run: second-app
+    spec:
+      containers:
+      - name: second-app
+        image: shaaksacr.azurecr.io/second-app:v1
+        ports:
+            - name: http
+              containerPort: 80
+        env:
+        - name: TITLE
+          value: "Welcome to Azure Kubernetes Service (AKS) II"
