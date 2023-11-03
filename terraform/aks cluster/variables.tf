@@ -1,5 +1,5 @@
 variable "agent_count" {
-  default = 3
+  default = 1
 }
 
 # The following two variable declarations are placeholder references.
@@ -21,18 +21,18 @@ variable "dns_prefix" {
 }
 
 # Refer to https://azure.microsoft.com/global-infrastructure/services/?products=monitor for available Log Analytics regions.
-variable "log_analytics_workspace_location" {
-  default = "centralindia"
-}
+# variable "log_analytics_workspace_location" {
+#   default = "centralindia"
+# }
 
-variable "log_analytics_workspace_name" {
-  default = "testLogAnalyticsWorkspaceName"
-}
+# variable "log_analytics_workspace_name" {
+#   default = "testLogAnalyticsWorkspaceName"
+# }
 
 # Refer to https://azure.microsoft.com/pricing/details/monitor/ for Log Analytics pricing
-variable "log_analytics_workspace_sku" {
-  default = "PerGB2018"
-}
+# variable "log_analytics_workspace_sku" {
+#   default = "PerGB2018"
+# }
 
 variable "resource_group_location" {
   default     = "centralindia"
