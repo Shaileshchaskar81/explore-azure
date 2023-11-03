@@ -2,6 +2,6 @@ from flask import Flask
 app = Flask('first-app')
 @app.route('/')
 def hello():
-  return "Hello World! Lets sail together - First App.\n"
+  return "Hello World! Lets sail together - first App.\n"
 if __name__ == '__main__':
   app.run(host = '0.0.0.0', port = 8080)
