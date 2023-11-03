@@ -15,3 +15,6 @@ spec:
     port: 9100
     protocol: TCP
     targetPort: metrics
+  selector:
+    app.kubernetes.io/instance: prometheus
+    app.kubernetes.io/name: prometheus-node-exporter

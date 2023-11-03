@@ -20,16 +20,9 @@ def run_example():
     subscription_id = os.environ.get(
         'AZURE_SUBSCRIPTION_ID',
         '62086a1d-1261-4c50-8a2d-734ed260fd8d')  # your Azure Subscription Id
-    """ credentials = ServicePrincipalCredentials(
-    client_id='ca83d945-f883-4105-81f2-69641b19613c',
-    secret='XOo8Q~2GdvW2y4RAVIN8maVHIAd1PPGh4R92xcuD',
-    tenant='a9313beb-02e5-4337-ad1e-e101ac3ec7ca'
-    ) """
     
     credential = ClientSecretCredential(
     tenant_id='a9313beb-02e5-4337-ad1e-e101ac3ec7ca',
-    client_id='ca83d945-f883-4105-81f2-69641b19613c',
-    client_secret='XOo8Q~2GdvW2y4RAVIN8maVHIAd1PPGh4R92xcuD'
     )
 
     resource_client = ResourceManagementClient(credential, subscription_id)
