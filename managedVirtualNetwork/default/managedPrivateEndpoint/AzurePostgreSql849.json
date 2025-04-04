@@ -1,0 +1,7 @@
+{
+	"name": "AzurePostgreSql849",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/62086a1d-1261-4c50-8a2d-734ed260fd8d/resourceGroups/ADF-PlayGround/providers/Microsoft.DBforPostgreSQL/flexibleServers/adfflexiserverdb1pr2025",
+		"groupId": "postgresqlServer"
+	}
+}
